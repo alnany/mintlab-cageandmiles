@@ -19,20 +19,34 @@
 <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-<header class="site-nav">
-<div class="nav-inner">
-<a class="nav-brand" href="/">Cage &amp; Miles</a>
-<button class="nav-toggle" aria-label="Menu" onclick="this.nextElementSibling.classList.toggle('open')">☰</button>
-<nav class="nav-links">
-<a href="/services/" aria-current="page">Services</a>
-<a href="/blog/">Blog</a>
-<a href="/team/leon-mindin/">Attorney</a>
-<a href="/testimonials/">Testimonials</a>
-<a href="/contact/">Contact</a>
-<a class="nav-cta" href="/contact/">Free Consultation</a>
+<nav id="nav">
+  <div class="ni">
+    <div class="nb">
+      <span class="nw serif">Cage &amp; Miles</span>
+      <span class="ne">Attorneys</span>
+    </div>
+    <div class="nl">
+      <a href="/services/">Practices</a>
+      <a href="/team/">Attorneys</a>
+      <a href="/testimonials/">Reviews</a>
+      <a href="/blog/">Insights</a>
+      <a href="/contact/">Contact</a>
+      <a href="tel:8332952441" class="nphone">833-295-2441</a>
+      <a href="/contact/" class="bc">Consultation</a>
+    </div>
+    <div class="ham" onclick="this.classList.toggle('open');document.getElementById('mmenu').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
 </nav>
+<div id="mmenu" class="mmenu">
+  <a href="/services/">Practices</a>
+      <a href="/team/">Attorneys</a>
+      <a href="/testimonials/">Reviews</a>
+      <a href="/blog/">Insights</a>
+      <a href="/contact/">Contact</a>
+  <a href="/contact/" class="bc">Consultation</a>
 </div>
-</header>
 <section class="page-hero">
 <div class="container">
 <div class="breadcrumb"><a href="/">Home</a> / <a href="/services/">Services</a> / Child Custody Attorneys in California</div>
